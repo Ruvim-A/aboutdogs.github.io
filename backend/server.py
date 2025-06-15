@@ -881,8 +881,137 @@ ADDITIONAL_BREEDS = [
     }
 ]
 
-# Combine all breeds
-ALL_BREEDS = DOG_BREEDS_DATA + ADDITIONAL_BREEDS
+# Combine all breeds (ensuring we have 52+ breeds)
+FINAL_ADDITIONAL_BREEDS = [
+    {
+        "name": "Brittany",
+        "size": "Medium",
+        "temperament": "Energetic, Eager, Athletic",
+        "origin": "France",
+        "lifespan": "12-15 years",
+        "weight": "30-40 lbs",
+        "height": "17-21 inches",
+        "care_level": "High",
+        "exercise_needs": "Very High",
+        "good_with_kids": True,
+        "good_with_pets": True,
+        "grooming_needs": "Moderate",
+        "image_url": "https://images.unsplash.com/photo-1605638868237-0660a05a135b",
+        "description": "Brittany dogs (formerly known as Brittany Spaniels) are compact, athletic sporting dogs originally bred in France as versatile hunting companions capable of pointing, retrieving, and working in various terrains and weather conditions. These energetic, medium-sized dogs possess boundless enthusiasm for outdoor activities and require extensive daily exercise and mental stimulation to prevent behavioral problems that can arise from their high energy levels and working drive. Their friendly, eager-to-please nature makes them excellent family pets for active households, though their intensity and exercise requirements mean they are not suitable for sedentary owners or apartment living without adequate exercise outlets.",
+        "health_issues": ["Hip Dysplasia", "Eye Problems", "Epilepsy"],
+        "breed_group": "Sporting"
+    },
+    {
+        "name": "Cane Corso",
+        "size": "Large",
+        "temperament": "Affectionate, Intelligent, Majestic",
+        "origin": "Italy",
+        "lifespan": "9-12 years",
+        "weight": "88-110 lbs",
+        "height": "23-28 inches",
+        "care_level": "High",
+        "exercise_needs": "High",
+        "good_with_kids": True,
+        "good_with_pets": False,
+        "grooming_needs": "Low",
+        "image_url": "https://images.unsplash.com/photo-1643811356771-dc2c1a53e235",
+        "description": "Cane Corsos are powerful, majestic Italian mastiffs originally bred as guardians, hunters, and farm dogs who possess both the strength to take down wild boar and the intelligence to serve as versatile working companions. These large, athletic dogs are known for their devotion to their families and their natural protective instincts, but they require experienced owners who can provide consistent leadership, extensive socialization, and proper training to ensure their protective nature doesn't become problematic. Their short coats require minimal grooming, but their size, strength, and protective instincts mean they need confident handling and adequate exercise to channel their energy and drive appropriately, making them unsuitable for novice dog owners or those unable to commit to their substantial training and exercise needs.",
+        "health_issues": ["Hip Dysplasia", "Elbow Dysplasia", "Bloat"],
+        "breed_group": "Working"
+    },
+    {
+        "name": "Australian Cattle Dog",
+        "size": "Medium",
+        "temperament": "Alert, Curious, Pleasant",
+        "origin": "Australia",
+        "lifespan": "12-16 years",
+        "weight": "35-50 lbs",
+        "height": "17-20 inches",
+        "care_level": "Very High",
+        "exercise_needs": "Very High",
+        "good_with_kids": True,
+        "good_with_pets": True,
+        "grooming_needs": "Low",
+        "image_url": "https://images.unsplash.com/photo-1643505339041-5f6328214385",
+        "description": "Australian Cattle Dogs, also known as Blue Heelers or Red Heelers depending on their coat color, are incredibly intelligent, high-energy working dogs bred in Australia to drive cattle across long distances in harsh conditions. These compact, athletic dogs possess almost limitless endurance and a strong work drive that requires extensive daily exercise and mental stimulation to prevent destructive behaviors that can result from boredom or pent-up energy. Their loyalty and intelligence make them excellent companions for very active owners, but their herding instincts may lead them to nip at the heels of children or other pets, requiring early training and socialization to redirect these natural behaviors appropriately.",
+        "health_issues": ["Hip Dysplasia", "Progressive Retinal Atrophy", "Deafness"],
+        "breed_group": "Herding"
+    },
+    {
+        "name": "Pomeranian",
+        "size": "Small",
+        "temperament": "Inquisitive, Bold, Lively",
+        "origin": "Germany/Poland",
+        "lifespan": "12-16 years",
+        "weight": "3-7 lbs",
+        "height": "6-7 inches",
+        "care_level": "High",
+        "exercise_needs": "Low",
+        "good_with_kids": False,
+        "good_with_pets": False,
+        "grooming_needs": "Very High",
+        "image_url": "https://images.pexels.com/photos/3512/garden-dog-pet.jpg",
+        "description": "Pomeranians are tiny, fox-like spitz dogs with fluffy double coats and outsized personalities that make them believe they're much larger than their 3-7 pound frames would suggest. Originally bred down from larger spitz-type sled dogs in the Pomerania region of Germany and Poland, these miniature companions became favorites of European royalty, including Queen Victoria, who helped popularize the breed. Despite their small size, they can be quite bold and may attempt to challenge much larger dogs, requiring careful supervision and socialization to prevent them from getting into dangerous situations, and their thick coats require daily brushing to prevent matting and manage their considerable shedding.",
+        "health_issues": ["Luxating Patella", "Tracheal Collapse", "Dental Problems"],
+        "breed_group": "Toy"
+    },
+    {
+        "name": "Havanese",
+        "size": "Small",
+        "temperament": "Outgoing, Funny, Intelligent",
+        "origin": "Cuba",
+        "lifespan": "14-16 years",
+        "weight": "7-13 lbs",
+        "height": "8-12 inches",
+        "care_level": "High",
+        "exercise_needs": "Moderate",
+        "good_with_kids": True,
+        "good_with_pets": True,
+        "grooming_needs": "Very High",
+        "image_url": "https://images.unsplash.com/photo-1667581207771-3ec800b19baf",
+        "description": "Havanese are charming, silky-coated toy dogs that serve as Cuba's national dog and were originally bred as companions for Cuban aristocracy, developing their outgoing, people-oriented personalities through centuries of selective breeding for companionship. These small but sturdy dogs are known for their amusing antics and natural showmanship, often seeming to perform for their families' entertainment, and their intelligence and eagerness to please make them highly trainable despite their sometimes mischievous nature. Their beautiful, flowing coats can be maintained in full length for showing or trimmed short for easier care, but either way requires regular brushing and professional grooming to prevent matting and maintain their coat's health and appearance.",
+        "health_issues": ["Heart Problems", "Eye Problems", "Hip Dysplasia"],
+        "breed_group": "Toy"
+    },
+    {
+        "name": "Shetland Sheepdog",
+        "size": "Small",
+        "temperament": "Playful, Energetic, Bright",
+        "origin": "Scotland",
+        "lifespan": "12-14 years",
+        "weight": "15-25 lbs",
+        "height": "13-16 inches",
+        "care_level": "High",
+        "exercise_needs": "High",
+        "good_with_kids": True,
+        "good_with_pets": True,
+        "grooming_needs": "High",
+        "image_url": "https://images.unsplash.com/photo-1516371535707-512a1e83bb9a",
+        "description": "Shetland Sheepdogs, often called 'Shelties,' are small, elegant herding dogs that resemble miniature Rough Collies and were originally bred on the Shetland Islands of Scotland to herd sheep, ponies, and poultry in harsh weather conditions. These intelligent, agile dogs retain their strong herding instincts and may attempt to herd children, other pets, or even cars if not properly trained and socialized, but their eager-to-please nature and high intelligence make them excel in obedience training and dog sports. Their beautiful double coats require regular brushing to prevent matting and manage seasonal shedding, and their sensitive nature means they respond best to positive, gentle training methods rather than harsh corrections.",
+        "health_issues": ["Hip Dysplasia", "Eye Problems", "Epilepsy"],
+        "breed_group": "Herding"
+    },
+    {
+        "name": "Maltese",
+        "size": "Small",
+        "temperament": "Gentle, Playful, Charming",
+        "origin": "Malta",
+        "lifespan": "12-15 years",
+        "weight": "4-7 lbs",
+        "height": "7-9 inches",
+        "care_level": "High",
+        "exercise_needs": "Low",
+        "good_with_kids": False,
+        "good_with_pets": True,
+        "grooming_needs": "Very High",
+        "image_url": "https://images.pexels.com/photos/373467/pexels-photo-373467.jpeg",
+        "description": "Maltese are ancient toy dogs with flowing, silky white coats that have been prized as companions by nobility and aristocracy for over 2,000 years, with evidence of the breed appearing in art and literature from ancient Greece, Rome, and Egypt. These tiny, elegant dogs were bred exclusively for companionship and have never had a working function, resulting in dogs that are perfectly content to be lap dogs and indoor companions, though they can be surprisingly bold and fearless despite their diminutive size. Their gorgeous coats require daily brushing and professional grooming to maintain their beauty and prevent matting, and their small size makes them fragile around young children, though they generally get along well with gentle older children and other small pets.",
+        "health_issues": ["Luxating Patella", "Dental Problems", "Heart Problems"],
+        "breed_group": "Toy"
+    }
+]
+
+ALL_BREEDS = DOG_BREEDS_DATA + ADDITIONAL_BREEDS + FINAL_ADDITIONAL_BREEDS
 
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
