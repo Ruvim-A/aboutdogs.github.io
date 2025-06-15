@@ -97,7 +97,7 @@ DOG_BREEDS_DATA = [
         "good_with_pets": False,
         "grooming_needs": "High",
         "image_url": "https://images.unsplash.com/photo-1453487977089-77350a275ec5",
-        "description": "German Shepherds are extremely versatile, serving as family companions, guard dogs, and service dogs.",
+        "description": "German Shepherds are versatile working dogs originally developed in Germany in the late 1800s for herding sheep, but their intelligence, loyalty, and trainability quickly made them valuable in military, police, and service work around the world. These confident, courageous dogs form incredibly strong bonds with their families and are naturally protective, making them excellent guard dogs, though they require early socialization to ensure their protective instincts don't become overly aggressive with strangers. Their high intelligence and work drive mean they need extensive mental and physical stimulation to prevent behavioral problems, and they thrive when given jobs to do, whether that's formal training, dog sports, or simply having consistent routines and tasks that challenge their minds and bodies.",
         "health_issues": ["Hip Dysplasia", "Bloat", "Degenerative Myelopathy"],
         "breed_group": "Herding"
     },
