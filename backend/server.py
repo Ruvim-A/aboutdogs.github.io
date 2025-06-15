@@ -133,7 +133,7 @@ DOG_BREEDS_DATA = [
         "good_with_pets": True,
         "grooming_needs": "Moderate",
         "image_url": "https://images.pexels.com/photos/19757632/pexels-photo-19757632.jpeg",
-        "description": "Labs are friendly, outgoing, and active companions who have more than enough affection to go around for a family looking for a medium to large dog.",
+        "description": "Labrador Retrievers consistently rank as America's most popular dog breed, and for good reason—these friendly, outgoing dogs possess an ideal combination of intelligence, trainability, and gentle temperament that makes them excellent family pets, service dogs, and working companions. Originally bred in Newfoundland (not Labrador) as fishing dogs to help fishermen retrieve nets and fish, they possess a water-resistant coat and strong swimming ability that makes them natural water dogs who love swimming and water activities. Their high energy levels and intelligence require regular exercise and mental stimulation, but their eager-to-please attitude and food motivation make them relatively easy to train, though their enthusiasm and size can be overwhelming for small children and elderly family members if not properly managed.",
         "health_issues": ["Hip Dysplasia", "Elbow Dysplasia", "Eye Problems"],
         "breed_group": "Sporting"
     },
