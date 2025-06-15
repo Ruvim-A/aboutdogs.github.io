@@ -169,7 +169,7 @@ DOG_BREEDS_DATA = [
         "good_with_pets": True,
         "grooming_needs": "Low",
         "image_url": "https://images.pexels.com/photos/38008/pexels-photo-38008.jpeg",
-        "description": "Beagles are loving, lovable, happy, easygoing, and companionable – all qualities that make them excellent family dogs.",
+        "description": "Beagles are compact, sturdy hounds originally bred in England for hunting hare and rabbit, and they possess one of the best noses in the dog world, with their scenting ability being so reliable that they're commonly used in airports and border crossings to detect contraband. These merry, friendly dogs are known for their distinctive bay or howl that they use to communicate with their hunting partners, though this vocalization can be problematic in urban settings where neighbors might not appreciate their enthusiasm for 'singing.' Their pack hunting heritage makes them naturally social dogs who get along well with children and other pets, but their strong scenting drive means they can become completely absorbed in following interesting smells, requiring secure fencing and leash walking to prevent them from wandering off on scent trails.",
         "health_issues": ["Hip Dysplasia", "Cherry Eye", "Epilepsy"],
         "breed_group": "Hound"
     },
