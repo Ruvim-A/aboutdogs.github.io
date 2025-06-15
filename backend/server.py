@@ -115,7 +115,7 @@ DOG_BREEDS_DATA = [
         "good_with_pets": True,
         "grooming_needs": "Low",
         "image_url": "https://images.pexels.com/photos/160846/french-bulldog-summer-smile-joy-160846.jpeg",
-        "description": "French Bulldogs are charming, adaptable companions that make excellent apartment dogs.",
+        "description": "French Bulldogs are charming, adaptable companion dogs that have become increasingly popular as urban pets due to their moderate exercise needs and generally quiet, well-mannered nature that makes them ideal for apartment living. Originally bred in England by lace workers who later moved to France during the Industrial Revolution, these dogs were developed specifically as companions rather than working dogs, and their entire temperament reflects this breeding purpose. Their distinctive 'bat ears,' flat faces, and compact, muscular build give them an adorable, almost comical appearance, but prospective owners should be aware that their flat faces can cause breathing difficulties, especially in hot weather, and they may require special care during exercise and travel.",
         "health_issues": ["Brachycephalic Syndrome", "Hip Dysplasia", "Allergies"],
         "breed_group": "Non-Sporting"
     },
