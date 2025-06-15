@@ -151,7 +151,7 @@ DOG_BREEDS_DATA = [
         "good_with_pets": True,
         "grooming_needs": "Very High",
         "image_url": "https://images.pexels.com/photos/3299899/pexels-photo-3299899.jpeg",
-        "description": "Poodles are exceptional jumpers, so pet parents should ensure their fences are high enough to prevent escapes.",
+        "description": "Poodles are highly intelligent, athletic dogs that come in three sizes (Standard, Miniature, and Toy) but all share the same remarkable intelligence, hypoallergenic curly coat, and dignified bearing that has made them popular companions for centuries. Originally bred in Germany as water retrievers for duck hunting, they later became associated with French aristocracy and circus performances due to their exceptional trainability and natural showmanship. Their unique coat doesn't shed like most dogs but instead continues to grow, requiring professional grooming every 6-8 weeks to maintain their health and appearance, and their high intelligence and energy levels mean they excel in dog sports, obedience training, and various canine activities that challenge both their minds and bodies.",
         "health_issues": ["Hip Dysplasia", "Progressive Retinal Atrophy", "Bloat"],
         "breed_group": "Non-Sporting"
     },
