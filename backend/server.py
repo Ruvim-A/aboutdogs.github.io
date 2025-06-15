@@ -79,7 +79,7 @@ DOG_BREEDS_DATA = [
         "good_with_pets": True,
         "grooming_needs": "Moderate",
         "image_url": "https://images.unsplash.com/photo-1558788353-f76d92427f16",
-        "description": "Golden Retrievers are friendly, intelligent, and devoted dogs. They are great family pets and are known for their patience with children.",
+        "description": "Golden Retrievers are among the most beloved family dogs in the world, originally bred in Scotland during the 1860s as hunting companions for retrieving waterfowl from both land and water. These intelligent, loyal dogs possess a gentle mouth that allows them to carry game without damaging it, and this same soft bite makes them excellent with children, earning them a reputation as ideal family pets. Their patient, friendly temperament combined with their high intelligence makes them not only wonderful companions but also excellent service dogs, therapy dogs, and search-and-rescue dogs who excel in various working roles throughout their lives.",
         "health_issues": ["Hip Dysplasia", "Elbow Dysplasia", "Heart Disease"],
         "breed_group": "Sporting"
     },
